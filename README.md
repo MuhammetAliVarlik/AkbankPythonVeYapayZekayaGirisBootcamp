@@ -304,6 +304,16 @@ En hızlı rota (19 dakika): AŞTİ -> Kızılay -> Sıhhiye -> Gar -> Gar -> Ke
 
 ---
 
-TODO:
+### 4. Projeyi Geliştirme Fikirleri
 
-- Projeyi Geliştirme Fikirleri Eklenecek
+- Kullanıcıdan giriş alınabilir: Şu anda test senaryoları üzerinden çalışıyor. Kullanıcıdan başlangıç ve varış noktalarını dinamik olarak alarak daha etkileşimli bir yapı oluşturulabilir.
+
+- Arayüz geliştirilebilir: Kullanıcı deneyimini artırmak için terminal tabanlı menü, masaüstü (Tkinter/PyQt) veya web tabanlı (Flask/Django) bir arayüz eklenebilir.
+
+- Farklı algoritmalar eklenebilir:
+
+  - Dijkstra Algoritması: Ağırlıklı graf yapılarında en kısa mesafeyi bulmada oldukça başarılıdır ve A\* ile kıyaslanabilir.
+
+  - Bellman-Ford Algoritması: Negatif ağırlıklı kenarlarla çalışabilme yeteneği sayesinde belirli özel senaryolar için avantaj sağlayabilir.
+
+  - Floyd-Warshall Algoritması: Tüm çiftler arasındaki en kısa yolları hesaplamak için kullanılabilir ve farklı istasyonlar arasındaki bağlantıları analiz etmekte faydalı olabilir.
