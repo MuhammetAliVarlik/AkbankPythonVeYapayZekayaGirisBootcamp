@@ -269,26 +269,3 @@ if __name__ == "__main__":
     if sonuc:
         rota, sure = sonuc
         print(f"En hızlı rota ({sure} dakika):", " -> ".join(i.ad for i in rota))
-
-    # Senaryo 9: Ters Rota (İstasyonlar Arasında Ters Yön)
-    print("\n9. Ters Yönle Rota Arama (AŞTİ'den Keçiören'e):")
-    rota = metro.en_az_aktarma_bul("M1", "T4")  # AŞTİ'den Keçiören'e, ters yön
-    if rota:
-        print("En az aktarmalı rota:", " -> ".join(i.ad for i in rota))
-
-    sonuc = metro.en_hizli_rota_bul("M1", "T4")  # AŞTİ'den Keçiören'e, ters yön
-    if sonuc:
-        rota, sure = sonuc
-        print(f"En hızlı rota ({sure} dakika):", " -> ".join(i.ad for i in rota))
-
-    # Senaryo 10: Bağlantılı Ama Ulaşılamayan Durum (Aktarma Yetersiz)
-    print("\n10. Bağlantılı Ama Ulaşılamayan Durum (Batıkent'ten OSB'ye):")
-    rota = metro.en_az_aktarma_bul("T1", "K4")  # Batıkent ve OSB arasında geçiş noktası yok
-    if rota:
-        print("En az aktarmalı rota:", " -> ".join(i.ad for i in rota))
-
-    sonuc = metro.en_hizli_rota_bul("T1", "K4")  # Batıkent ve OSB arasında geçiş noktası yok
-    if sonuc:
-        rota, sure = sonuc
-        print(f"En hızlı rota ({sure} dakika):", " -> ".join(i.ad for i in rota))
-
